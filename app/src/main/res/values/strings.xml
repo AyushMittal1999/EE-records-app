@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Records</string>
+    <string name="sign_out">Sign_out</string>
+    <string name="GO_BACK">Go_back</string>
+    <string name="clear">CLEAR</string>
+    <string name="exit">EXIT</string>
+
+    <string-array name="field">
+        <item name="none">-ALL</item>
+        <item name="Name">Name</item>
+        <item name="Lab">Lab</item>
+        <item name="Cost">Cost</item>
+        <item name="Billnumber">Billnumber</item>
+        <item name="Dop">DOP</item>
+    </string-array>
+    <string-array name="field2">
+        <item name="Cost">Cost</item>
+        <item name="dop">Date of purchase</item>
+    </string-array>
+    <string name="title_activity_search_range">searchRange</string>
+    <string name="parameter">PARAMETER</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_search">search</string>
+    <string name="update_pass">Update_Pass</string>
+    <string name="log_in">log_in</string>
+</resources>

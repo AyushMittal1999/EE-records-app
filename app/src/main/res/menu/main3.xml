@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/updatepass"
+        android:title="@string/update_pass"
+        app:showAsAction="ifRoom"
+        android:orderInCategory="1"/>
+
+    <item
+        android:id="@+id/login"
+        android:title="@string/log_in"
+        app:showAsAction="ifRoom"
+        android:orderInCategory="2"/>
+
+</menu>

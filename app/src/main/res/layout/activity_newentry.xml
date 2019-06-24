@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/mre"
+    android:layout_margin="7dp"
+    android:layout_height="match_parent"
+    tools:context=".newentry">
+    <RelativeLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:id="@+id/card1"
+            android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/heading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#002555"
+            android:layout_marginBottom="16dp"
+            android:textAlignment="center"
+            android:text="Add New Entry"
+            android:textSize="25sp" />
+        </android.support.v7.widget.CardView>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/scroll"
+            android:layout_below="@+id/card1"
+            android:layout_marginBottom="36dp"
+            android:layout_alignParentRight="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <TextView
+                    android:id="@+id/uid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/editname"
+                    android:layout_marginBottom="0dp"
+                    android:layout_marginTop="5sp"
+
+                    android:text="Unique id/Serial number"
+                    android:textSize="25sp" />
+
+
+                <TextView
+                    android:id="@+id/lab"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="false"
+                    android:layout_alignParentStart="false"
+                    android:layout_alignParentTop="false"
+
+                    android:text="LAB"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/dop"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="false"
+                    android:layout_alignParentStart="false"
+                    android:layout_alignParentTop="false"
+                    android:layout_below="@+id/edituid2"
+                    android:text="Date of puchase"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="false"
+                    android:layout_alignParentLeft="false"
+                    android:layout_alignParentStart="false"
+                    android:layout_below="@id/editqtystock"
+                    android:text="Cost"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="false"
+                    android:layout_alignParentStart="false"
+                    android:layout_alignParentTop="false"
+                    android:layout_below="@id/editlab"
+                    android:text="Name"
+                    android:textSize="20sp" />
+
+
+                <EditText
+                    android:id="@+id/edituid"
+                    android:hint="Starting serial number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5sp"
+
+                    android:layout_below="@id/uid"
+                    />
+
+                <EditText
+                    android:id="@+id/edituid2"
+                    android:layout_width="match_parent"
+                    android:hint="End serial number"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/edituid"
+                    android:layout_marginBottom="5sp"
+                    />
+
+                <EditText
+                    android:id="@+id/editdop"
+                    android:layout_marginTop="5sp"
+                    android:layout_marginBottom="5sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="false"
+                    android:layout_alignParentRight="false"
+                    android:layout_below="@id/dop"
+                    android:hint="yyyy/mm/dd"
+                    android:textSize="20sp"
+                    android:inputType="date" />
+
+                <EditText
+                    android:id="@+id/editprice"
+                    android:layout_marginTop="5sp"
+                    android:layout_marginBottom="5sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="false"
+                    android:layout_alignParentRight="false"
+                    android:layout_below="@id/price"
+                    android:hint="In Rs"
+                    android:inputType="numberDecimal" />
+
+
+                <EditText
+                    android:id="@+id/editname"
+                    android:layout_width="match_parent"
+
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="false"
+                    android:layout_alignParentRight="false"
+
+                    android:layout_below="@id/name"
+                    android:layout_marginBottom="5sp"
+                    android:layout_marginTop="5sp"
+                    android:inputType="textPersonName" />
+
+                <EditText
+                    android:layout_marginTop="5sp"
+                    android:layout_marginBottom="5sp"
+
+                    android:id="@+id/editlab"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="false"
+                    android:textSize="20sp"
+                    android:layout_alignParentRight="false"
+                    android:layout_below="@id/lab"
+                    android:inputType="textPersonName" />
+
+                <TextView
+                    android:id="@+id/consignor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/editdop"
+                    android:layout_marginBottom="5sp"
+                    android:layout_marginTop="5sp"
+                    android:text="Consignor"
+                    android:textSize="20sp" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:layout_below="@+id/consignor"
+                    android:id="@+id/editconsignor"
+                    android:hint="consignor name"
+                    android:layout_marginTop="5sp"
+                    android:layout_marginBottom="5sp"/>
+
+                <TextView
+                    android:id="@+id/desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/editcheck"
+                    android:layout_marginBottom="5sp"
+                    android:layout_marginTop="5sp"
+                    android:text="Description"
+                    android:textSize="20sp" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/editdesc"
+                    android:layout_marginTop="5sp"
+                    android:layout_marginBottom="5sp"
+                    android:layout_below="@+id/desc"
+                    android:hint="type description"
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:id="@+id/check"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/editprice"
+                    android:layout_marginBottom="5sp"
+                    android:layout_marginTop="5sp"
+                    android:text="Checked by"
+                    android:textSize="20sp" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="checker name"
+                    android:layout_marginTop="5sp"
+                    android:layout_marginBottom="5sp"
+                    android:textSize="20sp"
+                    android:id="@+id/editcheck"
+                    android:layout_below="@+id/check"/>
+
+                <TextView
+                    android:id="@+id/bill"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/editconsignor"
+                    android:layout_marginBottom="5sp"
+                    android:layout_marginTop="5sp"
+                    android:text="Bill Number"
+                    android:textSize="20sp" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:hint="Bill number"
+                    android:id="@+id/editbill"
+                    android:layout_marginTop="5sp"
+                    android:layout_marginBottom="5sp"
+                    android:layout_below="@+id/bill"/>
+                <TextView
+                    android:id="@+id/billdate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/editbill"
+                    android:layout_marginBottom="5sp"
+                    android:layout_marginTop="5sp"
+                    android:text="Bill Date"
+                    android:textSize="20sp" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:hint="Bill date in yyyy/mm/dd"
+                    android:id="@+id/editbilldate"
+                    android:layout_marginTop="5sp"
+                    android:layout_marginBottom="5sp"
+                    android:layout_below="@+id/billdate"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Qty Receipt"
+                    android:id="@+id/qtyreceipt"
+                    android:layout_marginBottom="5sp"
+                    android:textSize="20sp"
+                    android:layout_marginTop="5sp"
+                    android:layout_below="@+id/editbilldate"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:hint="Receipt qty"
+                    android:id="@+id/editqtyreceipt"
+                    android:layout_marginTop="5sp"
+                    android:layout_marginBottom="5sp"
+                    android:layout_below="@+id/qtyreceipt"/>
+
+                <TextView
+                    android:id="@+id/qtyissue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/editqtyreceipt"
+                    android:layout_marginBottom="5sp"
+                    android:layout_marginTop="5sp"
+                    android:text="Qty issued"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:hint="Qty issued"
+                    android:id="@+id/editqtyissue"
+                    android:layout_marginTop="5sp"
+                    android:layout_marginBottom="5sp"
+                    android:layout_below="@+id/qtyissue"/>
+
+                <TextView
+                    android:id="@+id/qtystock"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/editqtyissue"
+                    android:layout_marginBottom="5sp"
+                    android:layout_marginTop="5sp"
+                    android:text="Qty Stock"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/editqtystock"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/qtystock"
+                    android:layout_marginBottom="5sp"
+                    android:layout_marginTop="5sp"
+                    android:editable="false"
+                    android:hint="Automatically added"
+                    android:textSize="20sp" />
+
+
+                <TextView
+                    android:id="@+id/line"
+                    android:layout_width="match_parent"
+                    android:layout_height="2sp"
+                    android:layout_below="@+id/editdesc"
+                    android:background="@android:color/black"
+                    android:textSize="1sp" />
+
+                <Button
+                    android:id="@+id/add"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="false"
+                    android:layout_alignParentStart="false"
+                    android:layout_below="@id/line"
+
+                    android:layout_marginBottom="5sp"
+                    android:layout_marginTop="5sp"
+                    android:text="Add Issue Details" />
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="SAVE"
+                    android:id="@+id/save"
+                    android:layout_below="@+id/add"
+                    android:layout_marginTop="5sp"/>
+
+            </RelativeLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:visibility="gone"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.design.widget.CoordinatorLayout>
+
